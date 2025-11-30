@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SDK_JP_Web'; 
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+header{
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 9%;
+        background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #efded3;
+}
+.Heder{
+    display: flex;
+}
+.Heder a{
+    color: #efded3;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease
+}
+.Heder a:hover{
+    border-bottom:  2px solid  #d4af37;
+    transform: scale(1);
+}
+#menu-icon{
+    color: #efded3;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.chara{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #009900 1%,   #666666 28.53%, #339933  75.52%);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.Chara-text h5{
+    margin-bottom: 40px;
+}
+.Chara-text h1{
+    font-family: 'media/genjing.ttf';
+    font-size: 50px;
+    line-height: 1;
+    color: #efded3;
+    margin: 10 0 45px;
+
+}
+.Chara-text h4{
+    color: #d4af37;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'media/genjing.ttf';
+}
+.Chara-text p{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'media/genjing.ttf';
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.Kazuzu img{
+    width: 400px;
+    height: auto;
+    transition: all .50s ease;
+    padding-left: 30px;
+}
+.Kazuzu img:hover{
+    transform: scale(1.2);
+}
+.Chara-text a{
+    font-family: 'media/genjing.ttf';
+    display: inline-block;
+    color: #efded3;
+    background-color: #336633;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.Chara-text a:hover{
+    background: transparent;
+    border: 1px solid #c5ede7;
+    transform: translateX(8px);
+}
+.Chara-text p{
+    background: transparent;
+    transition: all .50s ease;
+}
+.Chara-text p:hover{
+    color: #d4af37;
+    background: #c5ede7;
+    transform: scale(1.3);
+   
+    border-radius: 19px;
+}
+.Chara-text a.demo i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons img{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .50s ease;
+}
+.icons img:hover{
+    color: #6a4799;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: #c5ede7;
+    background: #539382;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+/* Container baru */
+.artefak-section {
+    width: 100%;
+    background: linear-gradient(245.59deg, #666666 20.53%, #339933 57%);
+    padding: 100px 0;
+}
+
+.artefak-box {
+    width: 80%;
+    background: rgba(197, 237, 231, 0.5);
+    border-radius: 60px;
+    margin: auto;
+    padding: 50px 60px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left text area */
+.text-area {
+    width: 50%;
+}
+
+.text-area h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #1f1f1f;
+    font-weight: 700;
+}
+
+.scroll-text {
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 15px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #262626;
+}
+
+/* Right video area */
+.video-frame {
+    position: relative;
+    padding: 12px;
+    border-radius: 40px;
+    background: #ffffff; /* frame utama */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.video-frame::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: #99ff66;
+    z-index: -1;
+}
+
+.video-frame img {
+    height: 500px;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+
+/* Scrollbar aesthetic biar matching web */
+.scroll-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-text::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 10px;
+}
+
+.scroll-text::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.foot{
+    background: #64756c;
+    text-align: center;
+    padding: 20px;
+}
+.foot h1{
+    color: #d4af37;
+}
+.foot p{
+    font-family: 'media/genjing.ttf';
+    color: #efded3;
+}
+.foot img{
+    transition: all .50s ease;
+}
+.foot img:hover{
+    color: #6a4799;
+    transform: translateY(-5px);
+}
+
